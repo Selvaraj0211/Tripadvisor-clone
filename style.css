@@ -1,0 +1,30 @@
+*{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  .navubar{
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    
+  }
+  .navubar__logo{
+    width: 40px;
+    height: 40px;
+    
+  }
+  .navubar__logo--dis{
+    display: flex;
+    gap: 20px;
+    padding-left: 20%;
+    /* font-weight: 400; */
+  }
+  .navubar__dis--sign{
+    /* padding-left: 30%; */
+    display: flex;
+    align-items: center;
+    
+  }
