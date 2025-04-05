@@ -12,6 +12,7 @@ body {
 
 .navubar {
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     width: 100%;
     padding-left: 8%;
@@ -20,6 +21,7 @@ body {
     background-color: white;
     padding-top: 0%;
     margin-top: 0%;
+    z-index: 100;
 
 }
 
@@ -31,6 +33,7 @@ body {
 
 .navubar__logo--dis {
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 20px;
     padding-left: 20%;
 
@@ -42,6 +45,7 @@ body {
     align-items: center;
     gap: 5px;
     align-content: center;
+    cursor: pointer;
 }
 
 .sign {
@@ -53,6 +57,7 @@ body {
     align-items: center;
     padding-left: 8px;
     padding-top: 10px;
+
 }
 
 .title {
@@ -73,13 +78,14 @@ body {
     font-weight: 600;
     position: sticky;
     top: 70px;
+    z-index: 99;
     background-color: white;
 }
 
 .searchbar {
     align-items: center;
     padding-left: 25%;
-    padding top: 5px;
+    padding-top: 5px;
     gap: 10px;
     width: 60px;
 }
@@ -120,12 +126,12 @@ body {
 
 .tripimage {
     padding-top: 50px;
-    padding-left: 190px;
+    padding-left: 150px;
     position: relative;
 }
 
 .tripimage img {
-    width: 90%;
+    width: 95%;
     border-radius: 10px;
     height: 500px;
 }
@@ -133,7 +139,7 @@ body {
 .tripimage__ai {
     font-weight: 800;
     gap: 20px;
-    right: 65%;
+    right: 68%;
     align-items: self-start;
     position: absolute;
     bottom: 55%;
@@ -152,5 +158,198 @@ body {
 }
 
 .feedback {
-    padding-left: 85px;
+    padding-left: 150px;
+    font-size: medium;
+}
+
+.tripitem {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 80px;
+}
+
+.tripitem__one {
+    position: relative;
+}
+
+.tripitem__one h2 {
+    position: absolute;
+    bottom: 1px;
+    left: 170px;
+    color: white;
+}
+
+.tripitem img {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.chennai {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    padding-left: 88px;
+}
+
+.chennai__one p {
+    margin: 0%;
+    padding-top: 5px;
+}
+
+.chennai img {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.morexplore {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    gap: 20px;
+    padding: 5px;
+    background-color: rgb(209, 203, 203);
+    padding-left: 110px;
+    height: 400px;
+}
+
+.morexplore__one {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 33px;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.morexplore__one--con {
+    width: 30%;
+    height: 25%;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.morexplore__one--con a {
+    color: black;
+    text-decoration: none;
+}
+
+.morexplore img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.explore {
+    background-color: rgb(177, 181, 213);
+    display: flex;
+    height: 500px;
+    width: 90%;
+    padding-top: 50px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.explore button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: rgb(212, 212, 212);
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.footer__one {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    font-size: small;
+}
+
+.footer__two {
+    padding-left: 550px;
+}
+
+.footerslide {
+
+    background-color: rgb(212, 212, 212);
+    
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footerslide__one {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    font-size: xx-small;
+    text-decoration: underline;
+    width: 800px;
+}
+
+.footerslide__para {
+    justify-content: start;
+    font-size: x-small;
+    width: 800px;
+}
+
+.footerslide__select {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-left: 20%;
+    /* height: 50px;
+    border-radius: 10px; */
+}
+.footerslide__select select{
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    color: black;
+    font-weight: 800;x
+    align-items: center ;
+}   
+
+@media screen and (max-width:600px) {
+   .body{
+    font-size: 8px;
+    font-weight: 300;
+    padding-left: 0%;
+   }
+   
+    .navubar__logo--dis, .title,{
+        display: none;
+    }
+    .list{
+        font-size: 8px;
+    }
+    .searchbar{
+        width: 0px;
+    }
+    .morexplore{
+        flex-grow: 1;
+        flex-basis: 10px;
+       }
+       .explore{
+        flex-basis: 80%;
+       }
 }
