@@ -30,7 +30,16 @@ body {
     height: 40px;
 
 }
-
+.footerslide__logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
 .navubar__logo--dis {
     display: flex;
     /* flex-wrap: wrap; */
